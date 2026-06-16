@@ -124,10 +124,8 @@ export default function NewArrivals() {
         <div className="w-full">
           <div 
             ref={scrollContainerRef}
-            className="flex gap-6 md:gap-12 overflow-x-auto snap-x snap-mandatory no-scrollbar pb-12 -mx-6 md:mx-0"
+            className="flex gap-6 md:gap-12 overflow-x-auto snap-x snap-mandatory no-scrollbar pb-12"
           >
-            {/* Initial Spacer for mobile so it aligns with text */}
-            <div className="w-2 md:hidden shrink-0" />
             
             {PRODUCTS.map((product, index) => (
               <Link

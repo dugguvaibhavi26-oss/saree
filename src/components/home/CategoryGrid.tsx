@@ -36,7 +36,7 @@ export default function CategoryGrid() {
     offset: ["start end", "end start"],
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], ["0%", "15%"]);
+  const y = useTransform(scrollYProgress, [0, 1], ["-8%", "8%"]);
 
   return (
     <section ref={containerRef} className="py-24 px-6 md:px-12 bg-rich-black text-warm-ivory">
@@ -53,10 +53,10 @@ export default function CategoryGrid() {
             <Link
               key={category.id}
               href={`/collections/${category.id}`}
-              className={`group relative overflow-hidden block ${category.colSpan} ${category.aspect} border border-warm-ivory/10`}
+              className={`group relative overflow-hidden block ${category.colSpan} ${category.aspect} rounded-2xl border border-warm-ivory/10`}
             >
-              <div className="absolute inset-0 z-0 overflow-hidden bg-soft-charcoal">
-                <motion.div style={{ y }} className="w-full h-[115%] -top-[7.5%] relative">
+              <div className="absolute inset-0 z-0 overflow-hidden bg-soft-charcoal rounded-2xl">
+                <motion.div style={{ y }} className="w-full h-[120%] -top-[10%] relative">
                   <Image
                     src={category.image}
                     alt={category.title}
@@ -68,7 +68,7 @@ export default function CategoryGrid() {
               </div>
 
               {/* Border animation on hover */}
-              <div className="absolute inset-4 border border-warm-ivory/0 transition-colors duration-500 group-hover:border-warm-ivory/30 z-10 pointer-events-none" />
+              <div className="absolute inset-4 rounded-xl border border-warm-ivory/0 transition-colors duration-500 group-hover:border-warm-ivory/30 z-10 pointer-events-none" />
 
               <div className="absolute inset-0 z-20 flex flex-col justify-end p-8 md:p-12">
                 <h3 className="font-serif text-3xl md:text-4xl text-warm-ivory transform translate-y-4 transition-all duration-500 group-hover:translate-y-0 group-hover:tracking-widest">

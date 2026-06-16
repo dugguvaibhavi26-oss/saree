@@ -112,10 +112,11 @@ export default function ArtOfWeaving() {
                 className="object-cover" 
               />
             </div>
-            {/* Floating Statistic */}
-            <div className="absolute -bottom-16 -left-12 md:-bottom-24 md:-left-24 w-48 md:w-64 aspect-square bg-rich-black text-warm-ivory p-8 flex flex-col justify-center rounded-full shadow-2xl mix-blend-exclusion">
-               <span className="font-serif text-5xl mb-2 text-center block">120+</span>
-               <span className="font-sans text-[10px] uppercase tracking-widest text-center block opacity-80">Hours per piece</span>
+            {/* Floating Statistic - Redesigned */}
+            <div className="absolute -bottom-8 -left-4 md:-bottom-16 md:-left-16 bg-warm-ivory/80 backdrop-blur-lg border border-champagne-gold/30 p-6 md:p-8 flex flex-col justify-center items-center shadow-[0_10px_40px_rgba(0,0,0,0.1)] rounded-tr-[2.5rem] rounded-bl-[2.5rem] min-w-[160px] md:min-w-[200px]">
+               <span className="font-serif text-5xl md:text-6xl mb-3 text-rich-black">120+</span>
+               <div className="w-12 h-[2px] bg-champagne-gold mb-3 opacity-80" />
+               <span className="font-sans text-[9px] md:text-[11px] uppercase tracking-[0.3em] text-soft-charcoal text-center">Hours per piece</span>
             </div>
           </div>
 
