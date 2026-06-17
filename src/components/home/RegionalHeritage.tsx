@@ -151,8 +151,8 @@ export default function RegionalHeritage() {
                
                {/* CTA */}
                <Link 
-                 href={`/collections/${REGIONS[activeRegion].id}`}
-                 className="group flex items-center gap-3 md:gap-6 text-[10px] md:text-sm uppercase tracking-[0.2em] font-medium text-warm-ivory hover:text-champagne-gold transition-colors"
+                 href="/store"
+                 className="relative z-50 group flex items-center gap-3 md:gap-6 text-[10px] md:text-sm uppercase tracking-[0.2em] font-medium text-warm-ivory hover:text-champagne-gold transition-colors"
                >
                  <span>Explore</span>
                  <div className="w-8 h-8 md:w-12 md:h-12 rounded-full border border-white/20 flex items-center justify-center group-hover:border-champagne-gold transition-colors bg-white/5 backdrop-blur-sm">

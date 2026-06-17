@@ -97,11 +97,11 @@ export default function ShopByOccasion() {
             {OCCASIONS.map((occasion, i) => (
               <Link
                 key={occasion.id}
-                href={`/collections/${occasion.id}`}
+                href="/store"
                 ref={(el) => {
                   cardsRef.current[i] = el;
                 }}
-                className="group block relative w-[280px] md:w-[30vw] aspect-[4/5] overflow-hidden rounded-2xl transform-gpu shrink-0 snap-start"
+                className="relative z-50 group block w-[280px] md:w-[30vw] aspect-[4/5] overflow-hidden rounded-2xl transform-gpu shrink-0 snap-start"
                 style={{ transformStyle: "preserve-3d" }}
               >
                 <Image

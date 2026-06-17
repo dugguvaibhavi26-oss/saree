@@ -74,10 +74,10 @@ export default function NewArrivals() {
     const startAutoSlide = () => {
       intervalId = setInterval(() => {
         if (!container) return;
-        
+
         // Check if we're near the end
         const isNearEnd = container.scrollLeft + container.clientWidth >= container.scrollWidth - 50;
-        
+
         if (isNearEnd) {
           container.scrollTo({ left: 0, behavior: "smooth" });
         } else {
@@ -114,19 +114,19 @@ export default function NewArrivals() {
             </h2>
           </div>
           <Link
-            href="/collections/new"
-            className="text-sm font-sans uppercase tracking-widest border-b border-rich-black pb-1 hover:text-champagne-gold hover:border-champagne-gold transition-colors"
+            href="/store"
+            className="relative z-50 text-sm font-sans uppercase tracking-widest border-b border-rich-black pb-1 hover:text-champagne-gold hover:border-champagne-gold transition-colors"
           >
             Explore the collection
           </Link>
         </div>
 
         <div className="w-full">
-          <div 
+          <div
             ref={scrollContainerRef}
             className="flex gap-6 md:gap-12 overflow-x-auto snap-x snap-mandatory no-scrollbar pb-12"
           >
-            
+
             {PRODUCTS.map((product, index) => (
               <Link
                 key={product.id}
@@ -152,7 +152,7 @@ export default function NewArrivals() {
                     className="object-cover opacity-0 scale-105 transition-all duration-700 ease-in-out group-hover:opacity-100 group-hover:scale-100 rounded-2xl"
                   />
                 </div>
-                
+
                 <div className="flex flex-col gap-2 overflow-hidden px-2 md:px-0">
                   <h3 className="font-serif text-2xl transform translate-y-0 transition-transform duration-500 group-hover:-translate-y-1">
                     {product.name}

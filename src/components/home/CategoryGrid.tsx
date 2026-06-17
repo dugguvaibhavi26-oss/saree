@@ -52,8 +52,8 @@ export default function CategoryGrid() {
           {CATEGORIES.map((category) => (
             <Link
               key={category.id}
-              href={`/collections/${category.id}`}
-              className={`group relative overflow-hidden block ${category.colSpan} ${category.aspect} rounded-2xl border border-warm-ivory/10`}
+              href="/store"
+              className={`relative z-50 group relative overflow-hidden block ${category.colSpan} ${category.aspect} rounded-2xl border border-warm-ivory/10`}
             >
               <div className="absolute inset-0 z-0 overflow-hidden bg-soft-charcoal rounded-2xl">
                 <motion.div style={{ y }} className="w-full h-[120%] -top-[10%] relative">

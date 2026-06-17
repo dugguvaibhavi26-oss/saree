@@ -103,7 +103,7 @@ export default function Navbar() {
 
           {/* Right - Cart & Store */}
           <div className="flex items-center gap-4 md:gap-6">
-            <Link href="/collections" className="text-warm-ivory hover:text-champagne-gold transition-colors block" aria-label="Store">
+            <Link href="/store" className="text-warm-ivory hover:text-champagne-gold transition-colors block" aria-label="Store">
               <Store strokeWidth={1.5} className="w-5 h-5 md:w-6 md:h-6" />
             </Link>
             <button 
@@ -153,7 +153,7 @@ export default function Navbar() {
                     <ShoppingBag strokeWidth={1} className="w-16 h-16 text-soft-charcoal/30 mb-6" />
                     <p className="font-sans text-soft-charcoal text-lg mb-8">Your shopping bag is empty.</p>
                     <button 
-                      onClick={() => { setIsCartOpen(false); window.location.href = '/collections'; }}
+                      onClick={() => { setIsCartOpen(false); window.location.href = '/store'; }}
                       className="bg-rich-black text-warm-ivory px-8 py-3 rounded-full font-sans text-xs tracking-widest uppercase hover:bg-champagne-gold transition-colors"
                     >
                       Continue Shopping
@@ -213,7 +213,7 @@ export default function Navbar() {
               <nav className="flex flex-col gap-6 md:gap-8 items-center md:items-start text-center md:text-left">
                 {["Store", "Lookbook", "Our Heritage"].map((item, i) => {
                   let href = `/${item.toLowerCase().replace(" ", "-")}`;
-                  if (item === "Store") href = "/collections";
+                  if (item === "Store") href = "/store";
                   if (item === "Our Heritage") href = "/#varanasi";
 
                   return (

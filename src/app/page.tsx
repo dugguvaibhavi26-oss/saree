@@ -6,6 +6,8 @@ import RegionalHeritage from "@/components/home/RegionalHeritage";
 import ShopByOccasion from "@/components/home/ShopByOccasion";
 import BestSellers from "@/components/home/BestSellers";
 import CustomerStories from "@/components/home/CustomerStories";
+import ContactUs from "@/components/home/ContactUs";
+import FAQ from "@/components/home/FAQ";
 
 export default function Home() {
   return (
@@ -18,6 +20,8 @@ export default function Home() {
       <ShopByOccasion />
       <BestSellers />
       <CustomerStories />
+      <FAQ />
+      <ContactUs />
     </div>
   );
 }

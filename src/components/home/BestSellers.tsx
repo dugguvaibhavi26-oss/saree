@@ -74,8 +74,8 @@ export default function BestSellers() {
             Best Sellers
           </h2>
           <Link
-            href="/collections/best-sellers"
-            className="text-sm font-sans uppercase tracking-widest text-champagne-gold hover:text-warm-ivory transition-colors"
+            href="/store"
+            className="relative z-50 text-sm font-sans uppercase tracking-widest text-champagne-gold hover:text-warm-ivory transition-colors"
           >
             View All
           </Link>
