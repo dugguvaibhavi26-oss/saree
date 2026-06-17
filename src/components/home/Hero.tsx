@@ -60,7 +60,7 @@ export default function Hero() {
           playsInline 
           className="w-full h-full object-cover"
         >
-          <source src="https://media.istockphoto.com/id/2115328026/video/silhouette-of-beautiful-lady-wearing-gorgeous-traditional-dress-performing-bollywood-festival.mp4?s=mp4-640x640-is&k=20&c=GKnAdzKmtt30G_TCf8NqwcLCS9j0YxLHjXcNThQq8os=" type="video/mp4" />
+          <source src="/vidmp3.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-gradient-to-b from-rich-black via-transparent to-rich-black opacity-90" />
         <div className="absolute inset-0 bg-gradient-to-r from-rich-black via-transparent to-rich-black opacity-80" />
